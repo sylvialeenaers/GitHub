@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W2 Opdracht 2</title>
+</head>
+    
+<body>
+    
+    <!-- 2.	Maak een <button> die de functie berekenBMI() aanroept -->
+    
+    <input type="button" value="bereken BMI" onclick="berekenBMI()" >
+    
+       
+    <script>
+
+
+//1.	Maak een functie genaamd berekenBMI()
+        
+        var berekenBMI = function(){
+        
+
+//3.	Vraag via de prompt() de benodigde waarden (zie Wikipedia pagina)
+            
+            var lengte = prompt("lengte (in cm)");
+            var gewicht = prompt("gewicht? (in kg)");
+            
+            lengte = parseInt(lengte)/100;
+            gewicht = parseInt(gewicht);
+            
+            var BMI = gewicht / (lengte * lengte);
+            
+            alert(BMI);
+            
+            //4.	Geef terug aan de gebruiker via een alert()of de gebruiker overgewicht heeft
+            
+            if(BMI < 18.5){
+                alert("ondergewicht");
+            }else if(BMI < 25){
+               alert("normaal gewicht");
+            }else if(BMI <27){
+                alert("licht overgewicht");
+            }else if(BMI <30){
+                alert("matig overgewicht");
+            }else if(BMI < 40){
+                alert("ernstig overgewicht");
+            }else{
+                alert("ziekelijk overgewicht");
+            }
+        }
+       
+    </script>
+</body>
+</html>

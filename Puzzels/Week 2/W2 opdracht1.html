@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W2 Opdracht 1</title>
+</head>
+    
+<body>
+    
+    <!-- 2.	Maak een <button> die de functie vergelijkWoorden() aanroept -->
+    
+    <input type="button" value="klik hier" onclick="vergelijkWoorden()" >
+    
+    <script>
+        
+        //1.	Maak een functie genaamd vergelijkWoorden
+        var vergelijkWoorden = function(){
+            
+            //3.	Vraag via de prompt() de twee woorden
+            var woord1 = prompt("Woord1?");
+            var woord2 = prompt("Woord2?");
+            
+            //4.	Vergelijk de twee woorden met .length            
+            //5.	Geef terug aan de gebruiker via een alert() welk woord het langst was en uit hoeveel letters het woord bestond
+            if(woord1.length > woord2.length){
+                alert("woord1 is het langst en bevat " + woord1.length + " letters.");        
+            }
+             else{
+                alert("woord2 is het langst en bevat " + woord2.length + " letters.");        
+            }
+        }
+        
+    </script>
+</body>
+</html>
